@@ -1,4 +1,4 @@
-using MoviesApi;
+using MoviesApi.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
