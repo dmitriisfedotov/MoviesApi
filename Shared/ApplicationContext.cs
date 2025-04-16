@@ -7,13 +7,8 @@ public class ApplicationContext : DbContext
 
     public DbSet<Director> Directors => Set<Director>();
 
-    public ApplicationContext()
-    {
-
-    }
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql("Host=sandbox-db;Port=5432;Database=sandboxdb;Username=sandboxdb-user;Password=password");
+        optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=moviesdb;Username=movies-user;Password=password");
     }
 }
